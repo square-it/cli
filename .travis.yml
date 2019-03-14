@@ -1,16 +1,14 @@
 language: go
 go:
   - 1.11.x
-  - 1.12.x
 os:
   - linux
   - osx
-  - windows
 env:
   - GO111MODULE=on
 script:
-#  - go build
-#  - go test ./...
+   - go build ./...
+#  - go test ./... # will be restored after merge of https://github.com/project-flogo/cli/pull/49
    - go version
 
 deploy:
